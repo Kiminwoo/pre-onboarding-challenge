@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital&display=swap');
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    margin: 1% 2%;
+}
+
+.header-border{
+    border-bottom: solid 2px #EBEBEB;
+}
+
+.nav-logo{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-logo-name{
+    color: black;
+}
+.nav-logo-dot{
+    color: red;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    margin-left: 10%;
+}
+
+.nav-link{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Oswald;
+    color: #1D1F24;
+    opacity: 0.2;
+}
+
+.bar{
+    display: block;
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.hamburger{
+    margin-left: auto;
+}
+
+.main{
+    background-color: #F2F2F2;
+    height: 1024px;
+}
