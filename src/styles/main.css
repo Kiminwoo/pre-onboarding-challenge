@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital&display=swap');
+
+
+.main{
+    background-color: #F2F2F2;
+    height: 2024px;
+}
+
+.financeBtn{
+    background-color: #FF565C;
+    color:#FFFFFF;
+    width: 97px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Oswald;
+}
+
+.card-footer{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Lato;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-footer > span{
+    padding: 0% 4%;
+}
+
+.grid-right-area-header{
+    background-image: url(../images/img/card_1.png)
+}
+
+.grid-right-area-header > div {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-right-area-header > div > button {
+    margin: 10% 0% 10%;
+}
+
+.grid-right-area-header > div > span {
+    margin: 0% 0% 0% 5%;
+}
+
+.grid-right-area-header > div > .card-footer {
+    margin: 10% 0% 0% 5%;
+}
+
+.grid-right-area-header-text {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Oswald;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+
