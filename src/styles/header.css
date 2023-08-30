@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:ital&display=swap');
 
 
-li {
+.nav-menu > li {
     list-style: none;
 }
 
