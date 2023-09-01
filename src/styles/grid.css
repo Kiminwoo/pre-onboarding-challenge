@@ -57,3 +57,8 @@
 .grid-right-area-footer{
     grid-area:graf;
 }
+
+
+.footer-grid{
+    display: grid;
+}
