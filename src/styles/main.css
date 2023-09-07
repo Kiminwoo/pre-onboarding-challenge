@@ -14,7 +14,7 @@
     height: 40px;
     border: none;
     font-size: 14px;
-    font-weight: 500px;
+    font-weight: 600;
     font-family: Oswald;
     letter-spacing: 1.75px;
 }
@@ -476,4 +476,16 @@
 
 .slideshow-content .card-footer span {
     margin: 0% 7% 0% 3%;
+}
+
+
+
+/* mobile , tablet , desktop 에 따른 텍스트 줄바꿈 클래스 */
+
+br.line-break-m {
+
+}
+
+br.line-break-t {
+    
 }

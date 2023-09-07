@@ -1,13 +1,13 @@
 /* grid main area */
-.grid-main{
+.grid-main {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-auto-rows: minmax(25%,auto);
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(25%, auto);
     grid-template-areas:
-    "gsa gsa gsa    gsa   gsa   gsa    grah  grah"
-    "gsa gsa gsa    gsa   gsa   gsa    grac  grac "
-    "gla gla gcah   gcah  gcah  gcah   grac  grac"   
-    "gla gla gcahl  gcahl gcahr gcahr  graf  graf"
+        "gsa gsa gsa    gsa   gsa   gsa    grah  grah"
+        "gsa gsa gsa    gsa   gsa   gsa    grac  grac "
+        "gla gla gcah   gcah  gcah  gcah   grac  grac"
+        "gla gla gcahl  gcahl gcahr gcahr  graf  graf"
     ;
     grid-gap: 3% 2%;
     padding: 2% 2% 0% 2%
@@ -15,11 +15,12 @@
 
 /* grid-slide-area */
 .grid-slide-area {
-    grid-area:gsa;
+    grid-area: gsa;
 }
+
 /* grid-left-area */
-.grid-left-area{
-    grid-area:gla;
+.grid-left-area {
+    grid-area: gla;
     background-color: white;
 }
 
@@ -28,37 +29,134 @@
 */
 
 /* grid-center-area-header */
-.grid-center-area-header{
-    grid-area:gcah;
+.grid-center-area-header {
+    grid-area: gcah;
 }
 
 /* grid-center-area-footer */
-.grid-center-area-footer-left{
-    grid-area:gcahl;
+.grid-center-area-footer-left {
+    grid-area: gcahl;
 }
 
-.grid-center-area-footer-right{
-    grid-area:gcahr;
+.grid-center-area-footer-right {
+    grid-area: gcahr;
 }
+
 /* 
     grid right area 
 */
 
 /* grid-right-area-header */
-.grid-right-area-header{
-    grid-area:grah;
+.grid-right-area-header {
+    grid-area: grah;
 }
+
 /* grid-right-area-center */
-.grid-right-area-center{
-    grid-area:grac;
+.grid-right-area-center {
+    grid-area: grac;
 }
 
 /* grid-right-area-footer */
-.grid-right-area-footer{
-    grid-area:graf;
+.grid-right-area-footer {
+    grid-area: graf;
+}
+
+.footer-grid {
+    display: grid;
 }
 
 
-.footer-grid{
-    display: grid;
+br.line-break-d{
+    display: none;
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+
+
+    /* header */
+
+    .header{
+        padding: 1%;
+        margin: 2% 3% !important;
+    }
+
+    /* main */
+
+    .main{
+        padding: 5%;
+    }
+
+    .grid-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 18% 26% 12% 22% 12% 12% 12% 12% ;
+        grid-template-areas:
+            "gsa gsa"
+            "gla gla"
+            "grah grah"
+            "grac grac"
+            "graf graf"
+            "gcah gcah"
+            "gcahl gcahl"
+            "gcahr gcahr"
+        ;
+        grid-gap: 1% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    /* 디스플레이 none 영역 */
+
+    .nav-menu {
+        display: none;
+    }
+
+    .prev {
+        display: none;
+    }
+
+    .next {
+        display: none;
+    }
+
+    .slideshow-content-small-text {
+        display: none;
+    }
+
+    /* mobile , tablet , desktop 에 따른 텍스트 줄바꿈 클래스 */
+
+    br.line-break-m{
+        display: none;
+    }
+
+    br.line-break-d{
+        display: inline;
+    }
+    /* 모바일일 경우 카드영역의 css 설정 영역 */
+    .slideshow-content .card-footer {
+        bottom: 4%;
+        position: absolute;
+        right: 10%;
+        left: 30% !important;
+        margin: 0 auto;
+    }
+    
+    .slideshow-content .card-footer span{
+        margin: 0% 0% 0% 0% !important;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .grid-center-area-header > div > span {
+        margin: 0% 0% 0% 8% !important;
+    }
+
+    .grid-center-area-header > div > .card-footer {
+        margin: 6% 0% 0% 8% !important;
+    }
+
+    .grid-right-area-footer > div > .card-footer {
+        margin: 20% 0% 0% 8% !important;
+    }
+
 }

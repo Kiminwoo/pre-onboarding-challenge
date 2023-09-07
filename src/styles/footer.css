@@ -1,5 +1,6 @@
 .footer{
     background-color: #1D1F24;
+    width: 100%;
 }
 
 .footer-navbar{
@@ -121,7 +122,7 @@
     height: 45px;
     border: none;
     font-size: 12px;
-    font-weight: 500px;
+    font-weight: 500;
     font-family: Oswald;
     letter-spacing: 1.5px;
 }
